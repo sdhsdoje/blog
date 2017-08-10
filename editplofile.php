@@ -9,5 +9,8 @@ location.href="index.php"
 <?php
     exit();
 }
-session_destroy();
+$id=$_SESSION['id'];
+$name=$_SESSION["name"];
+echo htmlspecialchars($id);
+echo htmlspecialchars($name);
 ?>

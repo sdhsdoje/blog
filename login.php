@@ -10,8 +10,8 @@ alert("아이디와 비밀번호를 모두 입력해 주세요.");
     <?php
         exit();
     }
-$hash_id=hash('sha256',$id);
-$hash_pw=hash('sha256',$pw);
+$hash_id=hash('sha512',$id);
+$hash_pw=hash('sha512',$pw);
 $con=mysqli_connect("localhost","root","kjh","project") or die("fail to connect");
 $query="select * from login where id='$hash_id' and pw='$hash_pw'";
 $info=mysqli_query($con,$query);

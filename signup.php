@@ -3,7 +3,6 @@ $id=$_POST['id'];
 $pw=$_POST['pw'];
 $name=$_POST['name'];
 $pwr=$_POST['pwr'];
-$special_pattern = "/[`~!@#$%^&*|\\\'\";:\/?^=^+_()<>]/";
     if(!(isset($id)||isset($pw)||isset($pwr)||isset($name))){
         ?>
 <script>
@@ -20,17 +19,9 @@ alert("비밀번호와 비밀번호 확인이 다릅니다!");
 <?php
     exit();
 }
-if(preg_match($special_pattern, $name) ){
-    ?>
-<script>
-    alert("닉네임에 특수문자가 들어갈 수 없습니다!");
-    location.href="signup.php";
-    </script>
-<?php
-    exit();
-}
-$hash_id=hash('sha256',$id);
-$hash_pw=hash('sha256',$pw);
+mysql_real_escape_string($name);
+$hash_id=hash('sha512',$id);
+$hash_pw=hash('sha512',$pw);
 $con=mysqli_connect("localhost","root","kjh","project") or die("fail to connect");
 $query="insert into login id,pw,name values('$hash_id','$hash_pw','$name')";
 mysqli_query($con,$query);
