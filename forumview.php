@@ -9,4 +9,16 @@ echo htmlspecialchars($result['title']);
 echo htmlspecialchars($result['name']);
 echo htmlspecialchars($result['time']);
 echo htmlspecialchars($result['content']);
+
+$query="select * from forum_comment where idx=$idx";
+$info=mysqli_query($con,$query);
+for($result=mysqli_fetch_array($info))
+{
+    $time=$result['time'];
+    $title=$result['content'];
+    $name=$result['name'];
+    echo $time+"<br>";
+    echo $content+"<br>";
+    echo $name+"<br>";
+}
 ?>

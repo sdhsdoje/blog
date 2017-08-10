@@ -23,7 +23,7 @@ mysql_real_escape_string($name);
 $hash_id=hash('sha512',$id);
 $hash_pw=hash('sha512',$pw);
 $con=mysqli_connect("localhost","root","kjh","project") or die("fail to connect");
-$query="insert into login id,pw,name values('$hash_id','$hash_pw','$name')";
+$query="insert into login (id,pw,name) values('$hash_id','$hash_pw','$name')";
 mysqli_query($con,$query);
 ?>
 <script>

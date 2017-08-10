@@ -15,7 +15,7 @@ $title=$_POST['title'];
 $content=$_POST['content'];
 
 $con=mysqli_connect("localhost","root","kjh","project");
-$query="insert into forum title,content,name,id,time,idx values('$title','$content','$name','$hash_id','','')"
+$query="insert into forum (title,content,name,id,time,idx) values('$title','$content','$name','$hash_id','','')"
 mysqli_query($con,$query);
 ?>
 <script>

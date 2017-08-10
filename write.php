@@ -14,7 +14,7 @@ $content=mysql_real_escape_string($_POST['content']);
 $name=$_SESSION['name'];
 $hash_id=hash('sha512',$_SESSION['id']);
 $con=mysqli_connect("localhost","root","kjh","project") or die ("fail to connect");
-$query="insert into title,content,name,id,time,idx values('$title','$content','$name','$hash_id','','')";
+$query="insert into board (title,content,name,id,time,idx) values('$title','$content','$name','$hash_id','','')";
 mysqli_query($con,$query);
 ?>
 <script>
