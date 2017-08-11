@@ -1,3 +1,21 @@
+body{
+    font-family:돋움;
+}
 #title{
-    color:aqua; 
+    color:black; 
+    text-align:center;
+}
+#writetime{
+    
+    float: right;
+    margin-top: -50px;
+}
+#comments{
+    
+    font-family:Bookman Old style;
+}
+
+footer{
+    line-height:inherit;
+    vertical-align: bottom;
 }
