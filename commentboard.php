@@ -8,6 +8,6 @@ $query="insert into board_comment (content,name,pw,idx,no) values('$content','$n
 mysqli_query($con,$query);
 ?>
 <script>
-alert("글이 성공적으로 저장되었습니다.");
+alert("글이 성공적으로 저장되었습니다!");
 location.href="forum.php";
 </script>
