@@ -1,0 +1,47 @@
+#list {
+                           width:500px;
+                           border:1px solid orange;
+                   
+                           border-collapse:collapse;
+                    }
+                   
+                   
+                    #list td, #list th{
+                           font-size:12px;
+                           border:1px solid orange;
+                           padding:3px;
+                    }
+ 
+                    #list th{
+                           background-color:#cc99cc;
+                    }
+ 
+                    #list .td1 {
+                           width:3px;
+                           text-align:center;
+                    }
+ 
+                    #list .td2 {
+                           width:150px;
+                           text-align:center;
+                    }
+ 
+                    #list .td3 {
+                           width:50px;
+                           text-align:center;
+                    }
+ 
+                    #list .td4 {
+                           width:50px;
+                           text-align:center;
+                    }
+ 
+                    #list .td5 {
+                           width:5px;
+                           text-align:center;
+                    }
+                   
+                    /*부모 자식 관계 */
+                    #list .altRow{
+                           background-color:#e0f0b5;
+                    }
