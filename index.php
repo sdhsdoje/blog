@@ -22,7 +22,7 @@ else{
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>D_STORY</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
@@ -30,8 +30,8 @@ else{
         <header>
                 <a href="#"><img id="logo_d" src="./img/logo_d.png" alt="logo"></a>
                 <form id="search" action="search.php" method="POST">
-                    <input type="text" name="search" id="search_text">
-                    <input type="submit" value="search" id="search_submit">
+                    <input type="text" name="search" id="search_text" placeholder="         검색">
+                    <!--<input type="submit" value="search" id="search_submit">-->
                 </form>
             <a href="#" id="login">LOGIN</a>
             <a href="#" id="signup">SIGNUP</a>
@@ -55,7 +55,7 @@ else{
 			<p>Tel. 010-4539-4103</p>
 			<p>Fax. 02-1234-5678</p>
 			<span>사업자 등록번호 : 211-88-39442 | 대표이사 : 김종현</span><br>
-			<span>Copyright 2016 © Seoul Dgitech High School Co., Ltd</span>
+			<span>Copyright 2016 © Seoul Digitech High School Co., Ltd</span>
 			 <br> <br>
 			</div>
         </footer>

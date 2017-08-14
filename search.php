@@ -1,7 +1,8 @@
 <?php
 $search=$_POST['search'];
-$url="http://search.daum.net/search?nil_suggest=btn&w=blog&lpp=10&DA=SBC&q="+$search;
+$url="https://search.naver.com/search.naver?where=post&sm=tab_jum&ie=utf8&query=".$search;
 ?>
 <script>
 window.open('<?php echo $url ?>','<?php echo $search ?>');
+location.href="index.php";
 </script>
