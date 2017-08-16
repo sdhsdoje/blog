@@ -9,16 +9,18 @@
     <body>
     <img src="HOME_LOGO.png" width="180px" height="60px">                
     <div class="title">
-    <textarea class="textarea" placeholder="제목" rows="2" cols="100" autofocus></textarea>
+    <form action="write.php" method="POST">
+    <textarea class="textarea" placeholder="제목" name="title" rows="2" cols="100" autofocus></textarea>
     </div>
         <div class="content">
-            <textarea class="textarea" placeholder="내용" cols="100" rows="50"></textarea>
+            <textarea class="textarea" placeholder="내용" name="content" cols="100" rows="50"></textarea>
         </div>
         <div class="uploadbutton">
         <div class="uploadbutton">
-        <button><a href="#">완료</a></button> 
+       <input type="submit" value="글쓰기">
         </div>
         </div>
+        </form>
         <footer>
             <div id="footer_text">서울특별시 용산구 회나무로 15길 서울디지텍고등학교
 			<p>Tel. 010-4539-4103</p>
