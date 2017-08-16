@@ -15,7 +15,7 @@ if(!isset($_SESSION['id'])){
         <header>
                 <a href="#"><img id="logo_d" src="./img/logo_d.png" alt="logo"></a>
                 <form id="search" action="search.php" method="POST">
-                    <input type="text" name="search" id="search_text" placeholder="         검색">
+                    <input type="text" name="search" id="search_text" placeholder="검색">
                     <!--<input type="submit" value="search" id="search_submit">-->
                 </form>
             <a href="form/login.html" id="login">LOGIN</a>
@@ -28,11 +28,11 @@ if(!isset($_SESSION['id'])){
             </li>
             <li id="content2"><!--포럼-->
                 <div id="forum">FORUM</div>
-                <a href="#" id="forum_link">GO!</a>
+                <a href="Forum/Forum.php" id="forum_link">GO!</a>
             </li>
             <li id="content3"><!--블로그 결산-->
                 <div id="blog_settle">BLOG SETTLE</div>
-                <a href="#" id="blog_settle_link">GO!</a>
+                <a href="Blog_G/blog_g.html" id="blog_settle_link">GO!</a>
             </li>
         </ul>
         <footer>
@@ -70,7 +70,7 @@ else{
         <header>
                 <a href="#"><img id="logo_d" src="./img/logo_d.png" alt="logo"></a>
                 <form id="search" action="search.php" method="POST">
-                    <input type="text" name="search" id="search_text" placeholder="         검색">
+                    <input type="text" name="search" id="search_text" placeholder="검색">
                     <!--<input type="submit" value="search" id="search_submit">-->
                 </form>
                 <a href="logout.php" id="login">LOGOUT</a>

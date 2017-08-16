@@ -1,0 +1,69 @@
+* {margin: 0; padding: 0;}
+
+body {font-family: '나눔고딕'}
+
+#wrap {width: 95%; height: 1400px; margin: 0 auto; margin-top: 1.5%;}
+
+#login {width: 100%; height: 25px;}
+
+#login img {float: right;}
+
+#menu .topmenu ul {width: 100%; height: 70px; background-color: #FAF1F0; float: right; margin-top: 1%;}
+
+#menu .topmenu img {float: left;}
+
+#menu .topmenu ul li {text-align: center; line-height: 70px; list-style: none; float: left; width: 25%; height: 70px; font-size: 14pt;}
+
+.topmenu li a {text-decoration: none; color: black;}
+
+.topmenu li a:hover {color: red;}
+
+#wrap #con_top {width: 100%; height: 200px; background-color: #E1DFDA; display: inline-block; margin-top: 5%;}
+
+#con_top p {height: 100%; text-align: center;}
+#con_top p img {height: 100%;}
+
+#navbar {width: 100%; height: 70px; margin-top: 5%; float: left; position: relative; background-color: #9AAAA1;}
+
+#navbar ul li {text-align: center; line-height: 70px; list-style: none; float: left; width: 33.3%; height: 70px; font-size: 14pt;}
+
+.select {width: 100%; height: 100%; background-color: #9AAAA1;}
+
+.select p {text-align: center; line-height: 70px;}
+
+.search {width: 100%; height: 100%; background-color: #9AAAA1; display: block; float: left;}
+
+.search p {text-align: center; width: 100%; height: 70px; line-height: 70px; float: left;}
+
+.writing {width: 100%; height: 70px; background-color: #9AAAA1; float: right;}
+
+.writing a {text-decoration: none; color: #fff;}
+
+.writing a:hover {color: #EEADAB;}
+
+#card {width: 100%; float: left; margin-top: 3%;}
+
+.booxx1 {width: 100%; height: 400px; margin: 0 auto;}
+.booxx2 {width: 100%; height: 400px; margin: 0 auto; margin-top: 2%;}
+
+#card p {text-align-last: center; line-height: 385px; font-size: 1.5em;}
+
+.booxx1 .con_b1 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx1 .con_b1:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
+
+.booxx1 .con_b2 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx1 .con_b2:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
+
+.booxx1 .con_b3 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx1 .con_b3:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
+
+.booxx2 .con_b4 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx2 .con_b4:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
+
+.booxx2 .con_b5 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx2 .con_b5:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
+
+.booxx2 .con_b6 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx2 .con_b6:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
+
+footer .f_t p {text-align: center;}

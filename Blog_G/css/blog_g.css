@@ -1,0 +1,83 @@
+* {margin: 0; padding: 0; font-family: '나눔고딕';}
+
+#top {width: 100%; height: 600px; background-color: #DBECDE;}
+
+#top p {text-align: center;}
+
+#wrap1 {width: 95%; height: 800px; margin: 0 auto;}
+
+#con1 {margin-top: 3%;}
+
+.txt {width: 100%; height: 150px;}
+
+.dddiv {background-color: #C6EAEC; width: 600px; height: 50px; display: none; text-align: center; line-height: 25px; margin: 0 auto;}
+
+#ppp:hover + .dddiv {display: block;}
+
+.box {float: left; width: 100%; height: 700px; font-size: 15pt;}
+
+.m1 {float: left; width: 20%;}
+.m1:hover {background-color: #EFF9E5; transition: 0.3s;}
+.m1 img:hover {-webkit-transform: rotateY(180deg); transition: 0.8s;}
+
+.m2 {float: left; width: 20%;}
+.m2:hover {background-color: #F5EAEA; transition: 0.3s;}
+.m2 img:hover {-webkit-transform: rotateY(180deg); transition: 0.8s;}
+
+.m3 {float: left; width: 20%;}
+.m3:hover {background-color: #ECD9E5; transition: 0.3s;}
+.m3 img:hover {-webkit-transform: rotateY(180deg); transition: 0.8s;}
+
+.m4 {float: left; width: 20%;}
+.m4:hover {background-color: #E4D2E2; transition: 0.3s;}
+.m4 img:hover {-webkit-transform: rotateY(180deg); transition: 0.8s;}
+
+.m5 {float: left; width: 20%;}
+.m5:hover {background-color: #C6EAEC; transition: 0.3s;}
+.m5 img:hover {-webkit-transform: rotateY(180deg); transition: 0.8s;}
+
+#wrap2 {width: 100%; height: 750px; background-color: #263856;}
+
+#con2 {width: 100%; height: 650px; margin-top: 3%;}
+
+.txt2 {width: 100%; height: 150px;}
+
+.dddivv {background-color: #DBECDE; width: 390px; height: 50px; display: none; text-align: center; line-height: 25px; margin: 0 auto;}
+
+#pppp:hover + .dddivv {display: block;}
+
+#box2 {width: 100%; float: left;}
+
+.booox1 {width: 70%; height: 250px; margin: 0 auto;}
+
+.booox1 .img1 {position: absolute; float: left; width: 10%;}
+.booox1 .img2 {position: absolute; float: left; width: 10%;}
+.booox1 .img3 {position: absolute; float: left; width: 10%;}
+.booox2 .img4 {position: absolute; float: left; width: 10%;}
+.booox2 .img5 {position: absolute; float: left; width: 10%;}
+.booox2 .img6 {position: absolute; float: left; width: 10%;}
+
+.booox1 .txt1 {float: left; color: #fff; width: 50%; margin-left: 170px; line-height: 30px;}
+.booox1 .txt2 {float: left; color: #fff; width: 50%; margin-left: 170px; line-height: 30px;}
+.booox1 .txt3 {float: left; color: #fff; width: 50%; margin-left: 170px; line-height: 30px;}
+.booox2 .txt4 {float: left; color: #fff; width: 50%; margin-left: 170px; line-height: 30px;}
+.booox2 .txt5 {float: left; color: #fff; width: 50%; margin-left: 170px; line-height: 30px;}
+.booox2 .txt6 {float: left; color: #fff; width: 50%; margin-left: 170px; line-height: 30px;}
+
+.booox1 p {position: relative; float: left;}
+.booox2 p {position: relative; float: left;}
+
+.booox2 {width: 70%; height: 250px; margin: 0 auto;}
+
+.booox1 .ccon1 {width: 33%; height: 250px; float: left;}
+.booox1 .ccon2 {width: 33%; height: 250px; float: left;}
+.booox1 .ccon3 {width: 33%; height: 250px; float: left;}
+.booox2 .ccon4 {width: 33%; height: 250px; float: left;}
+.booox2 .ccon5 {width: 33%; height: 250px; float: left;}
+.booox2 .ccon6 {width: 33%; height: 250px; float: left;}
+
+footer {width: 95%; height: 70px; margin: 0 auto;}
+
+#foot_txt {width: 100%; height: 70px; line-height: 70px;}
+
+#foot_txt p {width: 100%; height: 70px; line-height: 70px; text-align: center;}
