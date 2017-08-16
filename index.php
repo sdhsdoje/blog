@@ -34,7 +34,7 @@ else{
                     <!--<input type="submit" value="search" id="search_submit">-->
                 </form>
             <a href="form/login.html" id="login">LOGIN</a>
-            <a href="#" id="signup">SIGNUP</a>
+            <a href="form/signup.html" id="signup">SIGNUP</a>
         </header>
         <ul class="mousewheel">
             <li id="content1"><!--홈-->
