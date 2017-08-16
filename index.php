@@ -33,7 +33,7 @@ else{
                     <input type="text" name="search" id="search_text" placeholder="         검색">
                     <!--<input type="submit" value="search" id="search_submit">-->
                 </form>
-            <a href="#" id="login">LOGIN</a>
+            <a href="form/login.html" id="login">LOGIN</a>
             <a href="#" id="signup">SIGNUP</a>
         </header>
         <ul class="mousewheel">
