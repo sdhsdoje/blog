@@ -16,6 +16,7 @@ location.href="form/signup.html";
 $hash_id=hash('sha512',$id);
 $hash_pw=hash('sha512',$pw);
 $con=mysqli_connect("localhost","root","kjh","project") or die("fail to connect");
+/*
 $query="select * from code where code='$code'";
 $info=mysqli_query($con,$query);
 $result=mysqli_fetch_array($info);
@@ -28,10 +29,11 @@ alert("등록 코드가 존재하지 않습니다!");
     <?php
     exit();
 }
+*/
 $query="insert into login (id,pw,name) values('$hash_id','$hash_pw','$name')";
 mysqli_query($con,$query);
 ?>
 <script>
 alert("회원가입 성공");
-location.href='createblog.php?id=<?php echo $name ?>';
+location.href='index.php';
 </script>

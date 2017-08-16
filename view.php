@@ -2,7 +2,7 @@
 session_start();
 $idx=$_GET['idx'];
 $con=mysqli_connect("localhost","root","kjh","project") or die("fail connect");
-$query="select * from bard where idx='$idx'";
+$query="select * from board where idx='$idx'";
 $info=mysqli_query($con,$query);
 $re=mysqli_fetch_array($info);
 ?>
@@ -11,7 +11,9 @@ $re=mysqli_fetch_array($info);
  <html>
 
     <head>
-
+	<script>
+	
+	</script>
     	
 
         <meta charset="utf-8">
@@ -19,7 +21,7 @@ $re=mysqli_fetch_array($info);
 
         
 
-        <title>글보기</title>
+        <title><?php echo $re['title'] ?></title>
 
 		
 
@@ -61,9 +63,9 @@ $re=mysqli_fetch_array($info);
                         <header role="bog-header" class="bog-header text-center">
 
                             <h3><span><?php echo $re['time']; ?></span></h3>
-
+				<a href='editboard.php?idx=<?php echo $idx ?>'>글 수정</a>
+				<a href='deleteboard.php?idx=<?php echo $idx ?>'>글 삭제</a>
                             <h2> <?php echo $re['content']; ?></h2>
-
                         </header>
 
                         
@@ -100,15 +102,23 @@ $re=mysqli_fetch_array($info);
 
                             <section>
                                 댓글
-                                <h4><?php $re['name']; ?><form action="commendboard.php" method="POST"><input type="text" name="name"><br>
-                                <input type="text" name="content"><br><input type="password" name="pw"><input type="submit"></form></h4>
+                                <h4><?php $re['name']; ?><form action="commentboard.php" method="POST">
+				<input type="hidden" name="idx" value=<?=$idx ?>>
+				<input type="text" name="name" placeholder="name">
+				<br>
+                                <input type="text" name="content" placeholder="content"><br>
+				<input type="password" name="pw" placeholder="Password">
+				<input type="submit">
+				</form></h4>
                                 
                                 
 
                                <?php
-                                while($re=mysqli_fetch_array($info)){
-                                    echo $re['content'];
+                                /*while($re=mysqli_fetch_array($info)){
+				    echo "<h2>".$re['name']."</h2>";
+                                    echo $re['content']."&nbsp<a href=edit(<?=$re['no']?>)>수정</a>&nbsp<a href=delete(<?=$re['no']?>)>삭제</a><br><hr>";
                                 }
+*/
                                 ?>
                                 
                             </section>

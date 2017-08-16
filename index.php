@@ -84,11 +84,11 @@ else{
             </li>
             <li id="content2"><!--포럼-->
                 <div id="forum">FORUM</div>
-                <a href="#" id="forum_link">GO!</a>
+                <a href="Forum/Forum.php" id="forum_link">GO!</a>
             </li>
             <li id="content3"><!--블로그 결산-->
                 <div id="blog_settle">BLOG SETTLE</div>
-                <a href="#" id="blog_settle_link">GO!</a>
+                <a href="Blog_G/blog_g.html" id="blog_settle_link">GO!</a>
             </li>
         </ul>
         <footer>

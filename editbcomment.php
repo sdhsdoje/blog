@@ -1,6 +1,6 @@
 <?php
-$no=$_POST['no'];
-$pw=$_POST['pw'];
+$no=$_GET['no'];
+$pw=$_GET['pw'];
 $con=mysqli_connect("localhost","root","kjh","project");
 $query="select * from board_comment where no=$no";
 $info=mysqli_query($con,$query);
