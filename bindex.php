@@ -36,7 +36,7 @@ if($_SESSION['name']==$id){
         while($re=mysqli_fetch_array($info)){
                 ?>
                 <div id="st">
-                    <a href='<?php echo $re['idx'] ?>'>
+                    <a href="<?php echo '../view.php?idx='.$re['idx'] ?>">
                         <h1><?php echo $re['title'] ?></h1>
                         <h5><?php echo $re['content'] ?></h5>
                     </a>
@@ -47,10 +47,7 @@ if($_SESSION['name']==$id){
             </section>
             <article>
                 <a href="../write.html" id="button">글쓰기</a>
-                <div id="list">
-                    <strong>최근 글</strong><br>
-                    
-                </div>
+
             </article>
         </div>
         <footer>
@@ -88,31 +85,22 @@ else
         </div>
         <div id="content3">     
             <section>
+               <?php
+        $con=mysqli_connect("localhost","root","kjh","project");
+        $query="select * from board where name='$id'";
+        $info=mysqli_query($con,$query);
+        while($re=mysqli_fetch_array($info)){
+                ?>
                 <div id="st">
-                    <a href="#">
-                        <h1>3</h1>
-                        <h5>내용</h5>
+                    <a href="<?php echo '../view.php?idx='.$re['idx'] ?>">
+                        <h1><?php echo $re['title'] ?></h1>
+                        <h5><?php echo $re['content'] ?></h5>
                     </a>
                 </div>
-                <div id="nd">
-                    <a href="#">
-                        <h1>2</h1>
-                        <h5>내용</h5>
-                    </a>
-                </div>
-                <div id="rd">
-                    <a href="#">
-                        <h1>1</h1>
-                        <h5>내용</h5>
-                    </a>
-                </div>
+                <?php
+        }
+    ?>
             </section>
-            <article>
-                <div id="list">
-                    <strong>최근 글</strong><br>
-                    
-                </div>
-            </article>
         </div>
         <footer>
            <br><br>
