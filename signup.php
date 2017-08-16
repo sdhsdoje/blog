@@ -11,7 +11,7 @@ alert("아이디와 비밀번호를 모두 입력해 주세요.");
     <?php
         exit();
     }
-if(!strcmp($pw,$pwr)){
+if($pw!=$pwr){
 ?>
 <script>
 alert("비밀번호와 비밀번호 확인이 다릅니다!");
