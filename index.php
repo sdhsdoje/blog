@@ -74,6 +74,8 @@ else{
                     <!--<input type="submit" value="search" id="search_submit">-->
                 </form>
                 <a href="logout.php" id="login">LOGOUT</a>
+                <a href='<?php echo $_SESSION['name'] ?>' id="signup">MyBlog</a>
+                <a href="editplofile.php" id="edit">EDIT</a>
         </header>
         <ul class="mousewheel">
             <li id="content1"><!--홈-->

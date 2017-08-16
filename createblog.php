@@ -1,13 +1,11 @@
 <?php
 $id=$_GET['id'];
-echo $id;
-mkdir($id,7777);
+mkdir($id,0777);
 $srcfile="/var/www/html/project/bindex.php";
 $dstfile="/var/www/html/project/".$id."/index.php";
-echo "<br>".$dstfile;
 copy($srcfile,$dstfile);
+echo "<script>
+alert('블로그가 생성되었습니다!');
+location.href='".$id."/index.php';
+</script>";
 ?>
-<script>
-alert("블로그가 생성되었습니다!");
-location.href=<?php $id+"index.php" ?>;
-</script>
