@@ -1,6 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $no=$_GET['no'];
 $pw=$_GET['pw'];
+$msg=$_GET['msg'];
 $con=mysqli_connect("localhost","root","kjh","project");
 $query="select * from board_comment where no=$no";
 $info=mysqli_query($con,$query);
@@ -9,16 +13,15 @@ if($result['pw']!=$pw){
     ?>
 <script>
     alert("비밀번호가 같지 않습니다!");
-   location.href="forum.php";
+    history.back(-1);
     </script>
 <?php
     exit();
 }
-$content=mysql_real_escape_string($_POST['content']);
-$query="update board_comment set content='$content' where no=$no"
+$query="update board_comment set content='$msg' where no=$no";
 mysqli_query($con,$query);
 ?>
 <script>
 alert("댓글수정 성공");
-location.href="forum.php";
+history.back(-1);
 </script>

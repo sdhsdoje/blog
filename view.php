@@ -11,9 +11,6 @@ $re=mysqli_fetch_array($info);
  <html>
 
     <head>
-	<script>
-	
-	</script>
     	
 
         <meta charset="utf-8">
@@ -47,7 +44,7 @@ $re=mysqli_fetch_array($info);
             	<div class="container">
                     <h1>
 
-                        	<img src="../HOME_LOGO.png">
+                        	<img src="HOME_LOGO.png">
 
                         </h1>
                 </div>
@@ -114,11 +111,28 @@ $re=mysqli_fetch_array($info);
                                 
 
                                <?php
-                                /*while($re=mysqli_fetch_array($info)){
+                                while($re=mysqli_fetch_array($info)){
 				    echo "<h2>".$re['name']."</h2>";
-                                    echo $re['content']."&nbsp<a href=edit(<?=$re['no']?>)>수정</a>&nbsp<a href=delete(<?=$re['no']?>)>삭제</a><br><hr>";
-                                }
-*/
+                                    echo $re['content']."&nbsp";
+					?>
+					<script>
+					        function del(no){
+        					var pw=prompt("비밀번호를 입력하세요");
+        					location.href="deletebcomment.php?no="+no+"&pw="+pw;
+        					}
+        					function edit(no){
+        					var pw=prompt("비밀번호를 입력하세요.");
+						var msg=prompt("수정할 글을 입력해주세요.");
+        					location.href="editbcomment.php?no="+no+"&pw="+pw+"&msg="+msg;
+        					}
+        					function test(){
+        					alert("test");
+        				}
+					</script>
+					<a href="javascript:void(0);" onclick="edit(<?=$re['no']?>)">수정</a>&nbsp
+					<a href="javascript:void(0);" onclick="del(<?=$re['no']?>)">삭제</a><br><hr>
+                                	<?php
+					}
                                 ?>
                                 
                             </section>
