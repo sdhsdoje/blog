@@ -39,7 +39,7 @@ $info=mysqli_query($con,$query);
         <div id="card">
             <div class="booxx1">
 			<?php
-			/*
+			
 			for($result=mysqli_fetch_array($info))
 			{
 				    $idx=$result['idx'];
@@ -49,16 +49,15 @@ $info=mysqli_query($con,$query);
 					
 			?>
                 <div class="con_b1">
-                    <p><b><?php
+                    <p><b><?php/*
 							    echo $idx+"<br>";
 							    echo $time+"<br>";
 								echo $title+"<br>";
-								echo $name+"<br>";
+								echo $name+"<br>";*/
 							?></b></p>
                 </div>
                <?php
 			}
-							*/
 							?>
             </div>
         </div>
