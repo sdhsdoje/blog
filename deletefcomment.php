@@ -1,6 +1,6 @@
 <?php
-$no=$_POST['no'];
-$pw=$_POST['pw'];
+$no=$_GET['no'];
+$pw=$_GET['pw'];
 $con=mysqli_connect("localhost","root","kjh","project");
 $query="select * from forum_comment where no=$no";
 $info=mysqli_query($con,$query);
@@ -9,16 +9,15 @@ if($result['pw']!=$pw){
     ?>
 <script>
     alert("비밀번호가 같지 않습니다!");
-   location.href="forum.php";
+    history.back(-1);
     </script>
 <?php
     exit();
 }
-$content=mysql_real_escape_string($_POST['content']);
-$query="delete from forum_comment where no=$no"
+$query="delete from forum_comment where no=$no";
 mysqli_query($con,$query);
 ?>
 <script>
 alert("댓글삭제 성공");
-location.href="forum.php";
+history.back(-1);
 </script>

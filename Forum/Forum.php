@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con=mysqli_connect("localhost","root","kh","project") or die("fail to connect");
+$con=mysqli_connect("localhost","root","kjh","project") or die("fail to connect");
 $query="select * from forum";
 $info=mysqli_query($con,$query);
 ?>
@@ -32,33 +32,28 @@ $info=mysqli_query($con,$query);
                 <li><div class="search">
                    
                 <li><div class="writing" style="float: right">
-                    <a href="#"><b>글 작성하기</b></a>
+                    <a href="../fwrite.html"><b>글 작성하기</b></a>
                 </div></li>
             </ul>
         </div>
         <div id="card">
             <div class="booxx1">
 			<?php
-			/*
-			for($result=mysqli_fetch_array($info))
-			{
+			
+			while($result=mysqli_fetch_array($info)){
 				    $idx=$result['idx'];
 					$time=$result['time'];
 					$title=$result['title'];
 					$name=$result['name'];
-					
 			?>
-                <div class="con_b1">
+                <div class="con_b1"><a href="../fview.php?idx=<?=$idx?>">
                     <p><b><?php
-							    echo $idx+"<br>";
-							    echo $time+"<br>";
-								echo $title+"<br>";
-								echo $name+"<br>";
+								echo $title;
 							?></b></p>
-                </div>
+                </a></div>
                <?php
 			}
-							*/
+				
 							?>
             </div>
         </div>

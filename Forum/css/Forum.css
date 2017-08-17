@@ -48,7 +48,7 @@ body {font-family: '나눔고딕'}
 
 #card p {text-align-last: center; line-height: 385px; font-size: 1.5em;}
 
-.booxx1 .con_b1 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
+.booxx1 .con_b1 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%; line-height:30px; margin-bottom:30px;text-decoration:none;}
 .booxx1 .con_b1:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
 
 .booxx1 .con_b2 {width: 25%; height: 385px; float: left; background-color: #C3D0D3; margin-left: 6.5%;}
@@ -67,3 +67,5 @@ body {font-family: '나눔고딕'}
 .booxx2 .con_b6:hover {opacity: 0.5; transition: all .3s; color: #ED7579;}
 
 footer .f_t p {text-align: center;}
+
+a{text-decoration:none;color:white;}
